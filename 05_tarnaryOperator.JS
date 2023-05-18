@@ -31,3 +31,5 @@ console.log(`${result}`);
 var num1 = 13;
 var result = num1%2 == 0 ? " EVEN number" : "ODD Number";
 console.log(`${result}`);
+
+
