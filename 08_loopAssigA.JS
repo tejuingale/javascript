@@ -70,41 +70,21 @@ var sum = 0;
  sumOfCube(1,1,1);
  console.log(/--------------- 3. odd position Character and not consider empty spaces--------------------/);
 
-var st1 = "Hard work always pays back";
-
-var st2 = "Soon I will be Angular IT Champ";
-var concatSt2 = "";
-var st1Length = st1.length;
-var concatSt1 = "";
-function oddPositionedChars(value1) {
-
-    for (let index = 0; index<=st2.length-1; index++ ){
-        //console.log(index);
-        if( index%2!=0 && index!= ' '){
-            
-            var char1 = st1.charAt(index);
-            concatSt1 = concatSt1.concat(char1);
-            concatSt3=concatSt1.replace(" ", "");
-            concatSt5=concatSt3.replace(" ", "");
-         
-           
-            var char2 = st2.charAt(index)
-            concatSt2 = concatSt2.concat(char2);
-            concatSt4=concatSt2.replace(" ", "");
-            concatSt6=concatSt4.replace(" ", "");
-               
-        }
-        
-    }
-   
-    console.log(`1.3.1) Given string  : "${st1}"`);
-   
-    console.log(`1.3.2)  Odd position Character: ${concatSt5}`);
-    console.log(/______________________/);
-    console.log(`1.3.3) Given string  : "${st2}"`);
-    console.log(`1.3.4)  Odd position Character: ${concatSt6}`);
+ function oddPositionedChars(givenString) {
+  var str = "";
+  for(index= 0; index<givenString.length;index++){
+   var char = givenString.charAt(index);
+   if(index%2 !=0 && char!= " "){
+    str = str + char;
     
-    
+   }
+  
+  }
+ 
+  console.log(str);
+  
 }
+
+oddPositionedChars("Soon I will be Angular IT Champ");
 oddPositionedChars("Hard work always pays back");
 
