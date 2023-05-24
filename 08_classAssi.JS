@@ -11,9 +11,10 @@ for(index = str.length-1;index>=0;index--){
 }
 console.log(reverseword);
 
-var str = "";
+
 
 function oddPositionedChars(givenString) {
+  var str = "";
   for(index= 0; index<givenString.length;index++){
    var char = givenString.charAt(index);
    if(index%2 !=0 && char!= " "){
@@ -30,7 +31,6 @@ function oddPositionedChars(givenString) {
 oddPositionedChars("Soon I will be Angular IT Champ");
 oddPositionedChars("Hard work always pays back");
 
- 
 
 
 
