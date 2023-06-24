@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+    <h2 id="first"> My Name : Tejashvini Ingale </h2>
+    <p id="mobile"> Mobile No. 916955069 </p>
+    <h2 id="second"> Favourite Subject </h2>
+    <ul id="List">
+        <li id="Subject"> Hindi </li>
+        <li> English </li>
+        <li onclick="show()"> Maths </li>
+        <li> Science </li>
+    </ul>
+    <p> <a href="https://www.instagram.com/" class="Link">Instgram Account</a> </p>
+    <script>
+        const firstId = document.querySelector("#first");
+        firstId.style.color = 'red';
+        const changeAttribute = document.querySelector(".Link");
+        changeAttribute.setAttribute = ('href','https://www.facebook.com/')
+        const changeValue = document.querySelector('#mobile');
+        changeValue.innerHTML = " Mobile No. : 2365987412";
+        const foantChange = document.querySelector("#second");
+        firstId.style.fontFamily = 'sans-serif';
+        const selectOne = document.querySelectorAll("li");
+  console.log(selectOne[2].innerHTML);
+  const parentElement = document.querySelector("#List");
+  const firstSub = document.querySelector("#Subject");
+  parentElement.removeChild(firstSub);
+  const createElement = document.createElement('li');
+  const createTextNode = document.createTextNode("Physics");
+  createElement.appendChild(createTextNode);
+  parentElement.appendChild(createElement);
+  const event = document.querySelector("#second");
+  event.addEventListener('click', ()=> {
+    event.style.color = 'green';
+
+  })
+  event.addEventListener('click', ()=> {
+  alert("Hey you touched me !!");
+
+  });
+  function show() {
+    alert("show function call");
+  }
+
+
+
+
+
+    </script>
+   
+    
+</body>
+</html>
